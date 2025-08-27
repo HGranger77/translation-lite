@@ -10,4 +10,4 @@ A lightweight translation service
 ### Guide
 - `make install` - install Python packages
 - `make download` - download model artifacts from Huggingface
-- `make serve` - build and serve the translation service at `http://localhost:8000`
+- `make serve` - build and serve the translation service at `http://localhost:8501`
