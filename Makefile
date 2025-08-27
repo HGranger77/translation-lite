@@ -12,4 +12,4 @@ download:
 	python src/_helpers/download.py
 
 serve:
-	docker-compose up -d model_server
+	docker compose up -d --build

@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from src.server.model import Model
+from model import Model
+
 
 app = FastAPI()
 model = Model()

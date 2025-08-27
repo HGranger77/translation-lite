@@ -7,5 +7,7 @@ A lightweight translation service
 
 - docker-compose
 
-### Python packages
-`make install`
+### Guide
+- `make install` - install Python packages
+- `make download` - download model artifacts from Huggingface
+- `make serve` - build and serve the translation service at `http://localhost:8000`

@@ -2,10 +2,11 @@ FROM pytorch/pytorch:2.8.0-cuda12.9-cudnn9-runtime
 
 WORKDIR /server
 
-ADD /src/server /server
+EXPOSE 8000
+
 ADD /requirements/requirements-server.txt /server/requirements-server.txt
 ADD /requirements/requirements-model.txt /server/requirements-model.txt
 
 RUN pip3 install -r requirements-server.txt -r requirements-model.txt
 
-EXPOSE 8000
+ADD /src/server /server
