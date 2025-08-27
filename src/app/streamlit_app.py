@@ -31,7 +31,7 @@ with st.spinner("waiting"):
         except requests.exceptions.RequestException:
             pass
 
-language = st.selectbox("Language", list(language_code_map.keys()))
+language = st.selectbox("Language", list(language_code_map.keys()), index=list(language_code_map.keys()).index("German"))
 text_input = st.text_area("Translate:", height=200)
 
 if st.button("Submit"):
