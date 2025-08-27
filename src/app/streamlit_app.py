@@ -9,7 +9,6 @@ language_code_map = {
     "Italian": "ita_Latn",
     "Chinese": "zho_Hans",
     "Russian": "rus_Cyrl",
-    "Arabic": "ara_Arab",
     "Hindi": "hin_Deva",
     "Japanese": "jpn_Jpan",
     "Korean": "kor_Hang",
@@ -17,9 +16,9 @@ language_code_map = {
     "Dutch": "nld_Latn",
     "Swedish": "swe_Latn",
     "Turkish": "tur_Latn",
-    "Vietnamese": "vie_Latn"
-
+    "Vietnamese": "vie_Latn",
 }
+language_code_map = dict(sorted(language_code_map.items()))
 
 st.set_page_config(page_title="Translation Lite")
 st.title("Translation Lite")
