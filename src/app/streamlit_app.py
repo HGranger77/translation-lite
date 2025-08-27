@@ -31,11 +31,11 @@ with st.spinner("waiting"):
         except requests.exceptions.RequestException:
             pass
 
-text_input = st.text_area("Translate:")
 language = st.selectbox("Language", list(language_code_map.keys()))
+text_input = st.text_area("Translate:", height=200)
 
 if st.button("Submit"):
     response = requests.post("http://server:8000/infer", json={"input_text": text_input, "language_code": language_code_map.get(language)})
     response.raise_for_status()
     translated_text = response.json().get("translated_text")
-    st.text_area("Translation:", translated_text)
+    st.text_area("Translation:", translated_text, height=200)
