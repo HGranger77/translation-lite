@@ -21,6 +21,8 @@ language_code_map = {
 
 }
 
+st.title("Translation Lite")
+
 with st.spinner("waiting"):
     while True:
         try:
