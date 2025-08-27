@@ -1,0 +1,11 @@
+# Model requirements
+sentencepiece
+torch
+transformers
+
+# App requirements
+streamlit
+
+# Server requirements
+fastapi
+uvicorn

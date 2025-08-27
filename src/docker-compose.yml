@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  streamlit_app:
+    build: app
+    ports:
+      - "8501:8501"
+    command: streamlit run /app/main.py --server.port 8501
