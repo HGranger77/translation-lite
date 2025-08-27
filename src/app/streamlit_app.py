@@ -21,6 +21,7 @@ language_code_map = {
 
 }
 
+st.set_page_config(page_title="Translation Lite")
 st.title("Translation Lite")
 
 with st.spinner("waiting"):
