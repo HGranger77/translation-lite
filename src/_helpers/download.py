@@ -1,5 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
+
 # https://huggingface.co/docs/transformers/en/model_doc/nllb
 checkpoint = "facebook/nllb-200-distilled-600M"
 save_directory = "./artifacts"
