@@ -14,26 +14,20 @@ The app uses `streamlit` to deploy a lightweight dashboard, allowing a user to i
 
 ![Translation Streamlit App](./translation-lite.png)
 
-## Requirements
+## Quickstart Guide
 
-Prerequisites
+Prerequisites:
 
 - docker-compose
 
-Python packages for development
-
-```
-make install
-```
-
-## Quickstart Guide
+Serving:
 
 ```
 make download
 make serve
 ```
 
-## Make Targets
+## Development
 
 - `make install` - installs Python packages for development
 - `make download` - downloads model artifacts from Huggingface to the `./artifacts` directory
