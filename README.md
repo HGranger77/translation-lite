@@ -20,7 +20,7 @@ Prerequisites
 
 - docker-compose
 
-Python Packages for Development
+Python packages for development
 
 ```
 make install
