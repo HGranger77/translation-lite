@@ -16,11 +16,11 @@ The app uses `streamlit` to deploy a lightweight dashboard, allowing a user to i
 
 ## Requirements
 
-### Prerequisites
+Prerequisites
 
 - docker-compose
 
-### Python Packages for Development
+Python Packages for Development
 
 ```
 make install
