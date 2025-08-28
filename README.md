@@ -1,6 +1,6 @@
 # translation-lite
 
-A simple translation service
+A simple English -> X translation service.
 
 ## Service Architecture
 
