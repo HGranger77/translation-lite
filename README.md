@@ -20,6 +20,12 @@ The app uses `streamlit` to deploy a lightweight dashboard, allowing a user to i
 
 - docker-compose
 
+### Python Packages for Development
+
+```
+make install
+```
+
 ## Quickstart Guide
 
 ```
