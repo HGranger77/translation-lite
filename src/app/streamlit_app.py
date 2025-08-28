@@ -23,7 +23,7 @@ language_code_map = dict(sorted(language_code_map.items()))
 st.set_page_config(page_title="Translation Lite")
 st.title("Translation Lite")
 
-with st.spinner("waiting"):
+with st.spinner("Initializing model..."):
     while True:
         try:
             response = requests.post("http://server:8000/infer", json={})
