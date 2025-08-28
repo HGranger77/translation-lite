@@ -6,7 +6,7 @@ A simple translation service
 
 ### Model Server
 
-The model server uses the `transformers` library to serve the Facebook `Nllb` model using Huggingface artifacts. The server is hosted with `uvicorn` and leverages `fastapi` to provide a inference API endpoint.
+The model server uses the `transformers` library to serve the [Facebook NLLB](https://huggingface.co/facebook/nllb-200-distilled-600M) model using Huggingface artifacts. The server is hosted with `uvicorn` and leverages `fastapi` to provide a inference API endpoint.
 
 ### Streamlit App
 
