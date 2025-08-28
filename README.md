@@ -41,4 +41,4 @@ The repository includes a utility to download the required Huggingface artifacts
 
 The service is built and deployed using `docker compose`, allowing the service to be deployed on any machine with Docker Compose configured.
 
-The server container leverages a Pytorch base image so reduce the burden of installing `pytorch`.
+The server container leverages a Pytorch base image to reduce the burden of installing `pytorch`.
