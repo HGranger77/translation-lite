@@ -12,6 +12,8 @@ The model server uses the `transformers` library to serve the Facebook `Nllb` mo
 
 The app uses `streamlit` to deploy a lightweight dashboard, allowing a user to input English source text to the service, select the desired langauge, and view the corresponding translation.
 
+![Translation Streamlit App](./translation-lite.png)
+
 ## Requirements
 
 ### Prerequisites
