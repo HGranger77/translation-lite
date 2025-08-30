@@ -7,6 +7,10 @@ model = Model()
 
 @app.post("/infer")
 async def infer(request: dict):
+    """
+    Inference endpoint for text translation.
+    """
+
     input_text = request.get("input_text")
     language_code = request.get("language_code")
     translated_text = model.infer(input_text, language_code)

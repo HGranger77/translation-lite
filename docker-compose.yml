@@ -7,13 +7,6 @@ services:
     expose: ["8000"]
     volumes: [./artifacts:/server/artifacts]
     command: uvicorn main:app --host 0.0.0.0 --port 8000
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
   app:
     build: 
       context: .
