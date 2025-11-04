@@ -16,3 +16,6 @@ download:
 
 serve:
 	docker compose up -d --build
+
+serve-gpu:
+	docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d --build
