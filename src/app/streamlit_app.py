@@ -1,25 +1,12 @@
 import streamlit as st
 import requests
+import yaml
 
 
-# Mapping of language names to their respective codes
-language_code_map = {
-    "French": "fra_Latn",
-    "German": "deu_Latn",
-    "Spanish": "spa_Latn",
-    "Italian": "ita_Latn",
-    "Chinese": "zho_Hans",
-    "Russian": "rus_Cyrl",
-    "Hindi": "hin_Deva",
-    "Japanese": "jpn_Jpan",
-    "Korean": "kor_Hang",
-    "Portuguese": "por_Latn",
-    "Dutch": "nld_Latn",
-    "Swedish": "swe_Latn",
-    "Turkish": "tur_Latn",
-    "Vietnamese": "vie_Latn",
-}
-language_code_map = dict(sorted(language_code_map.items()))
+# Load language code map from YAML file
+with open("/app/languages_config.yaml", "r", encoding="utf-8") as f:
+    language_code_map = yaml.safe_load(f)
+    language_code_map = dict(sorted(language_code_map.items()))
 
 # Streamlit app configuration
 st.set_page_config(page_title="Translation Lite")
