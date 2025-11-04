@@ -25,6 +25,7 @@ Serving:
 ```
 make download
 make serve
+# make serve-gpu
 ```
 
 ## Development
@@ -32,6 +33,7 @@ make serve
 - `make install` - installs Python packages for development
 - `make download` - downloads model artifacts from Huggingface to the `./artifacts` directory
 - `make serve` - build and serve the translation service at [http://localhost:8501](http://localhost:8501)
+- `make serve` - build and serve the translation service at [http://localhost:8501](http://localhost:8501) with GPU
 
 ## Design Elements
 
